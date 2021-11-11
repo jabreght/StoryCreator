@@ -1,0 +1,108 @@
+{
+    "Story Nodes" : [
+		{
+            "Node ID" : "GFX Resources",
+			"Path" : "Assets/Graphics/"
+        },
+        {
+            "Node ID" : "1",
+            "Node Type" : "Dialogue",
+            "Response choices" : [
+                "So this is the start",
+                "Prepare for it"
+            ],
+            "Destination ID" : [
+                "2",
+                "3"
+            ]
+        },
+        {
+            "Node ID" : "2",
+            "Node Type" : "Dialogue",
+            "Response choices" : [
+                "It's such a nice start"
+            ],
+            "Destination ID" : [
+                "4"
+            ]
+        },
+		{
+            "Node ID" : "3",
+            "Node Type" : "Dialogue",
+            "Response choices" : [
+                "Prepare for what?!"
+            ],
+            "Destination ID" : [
+                "4"
+            ]
+        },
+		{
+            "Node ID" : "4",
+            "Node Type" : "Set Variable",
+            "Destination ID" : [
+                "5"
+            ],
+			"Variables" : [
+                {
+                    "Variable" : "int",
+                    "Value" : "27"
+                },
+				{
+                    "Variable" : "float",
+                    "Value" : "3.14"
+                },
+				{
+                    "Variable" : "string",
+                    "Value" : "string"
+                },
+				{
+                    "Variable" : "bool",
+                    "Value" : "true"
+                },
+            ]
+        },
+		{
+            "Node ID" : "5",
+            "Node Type" : "Change Variable",
+            "Destination ID" : [
+                "6"
+            ],
+			"Variables" : [
+                {
+                    "Variable" : "int",
+                    "Value" : "22"
+                },
+				{
+                    "Variable" : "float",
+                    "Value" : "6.28"
+                },
+				{
+                    "Variable" : "string",
+                    "Value" : "not a string"
+                },
+				{
+                    "Variable" : "bool",
+                    "Value" : "false"
+                },
+            ]
+        },
+		{
+            "Node ID" : "6",
+            "Node Type" : "Change Background",
+            "Destination ID" : [
+                "7"
+            ],
+			"Path" : "20017_anime_scenery"
+        },
+		{
+            "Node ID" : "7",
+            "Node Type" : "Dialogue",
+            "Response choices" : [
+                "This is the end!"
+            ],
+            "Destination ID" : [
+                "7"
+            ]
+        }
+    ]
+}
